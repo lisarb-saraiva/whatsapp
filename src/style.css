@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(to right, #021838, #810871, rgb(67, 33, 67));
+  font-family: "Roboto Mono", monospace;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.container input,
+.container textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,37 +1,70 @@
 body {
-  background: linear-gradient(to right, #021838, #810871, rgb(67, 33, 67));
-  font-family: "Roboto Mono", monospace;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  
-
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;  background: linear-gradient(to right, #021838, #810871, rgb(67, 33, 67));
+    background-size: 200% auto;
+    animation: 10s unset;
+    animation: gradientMovement 10s linear infinite;
 }
-
 .container {
-  max-width: 400px;
-  padding: 20px;
-  text-align: center;
+    background: #ffffffa9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container h1 {
-  margin-bottom: 20px;
+.container:hover {
+  background: linear-gradient(to right, #76a5eb, #e4d9e3, rgb(234, 206, 234));
+  background-size: 200% auto;
+  animation: 10s unset;
+  animation: gradientMovement 10s linear infinite;
 }
 
-.container input,
-.container textarea {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: rgb(249, 249, 249);
+    font: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align:center;
+      left: 50%;
+      top: 50%;
+      margin-left:50px;
+      margin-right: 50px;
+      margin-top:10px;
+    padding: 15px 30px; 
+    margin: 20px 90px;
+}
+button:hover {
+    background-color: #1ebe57;
 }
 
-.container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
 }
